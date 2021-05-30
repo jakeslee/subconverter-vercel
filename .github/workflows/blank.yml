@@ -19,6 +19,7 @@ jobs:
         curl -LO https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
         tar xvf subconverter_linux64.tar.gz
         mv -f subconverter/subconverter subconverter/subconverter.exe
+        cp -f pref.ini subconverter/pref.ini
     - name: log push  #获得自动部署的时间
       run: | 
         echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
